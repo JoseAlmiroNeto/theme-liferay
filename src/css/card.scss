@@ -1,0 +1,25 @@
+.product-container {
+  box-shadow: 0px 0px 10px 5px rgba(200, 200, 200, 0.5);
+  transition: transform 0.3s;
+  cursor: pointer;
+
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: rgba(237, 237, 237, 0.8);
+  }
+
+  .product-title {
+    font-weight: 700;
+  }
+
+  .product-description {
+    text-align: end;
+  }
+}
+
+.product-container:hover {
+  transform: scale(1.1);
+}
+
