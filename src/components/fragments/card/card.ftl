@@ -12,7 +12,7 @@
                             Title
                         </lfr-editable>
                     </h5>
-                    <p class="card-text text-end">
+                    <p class="card-text text-right">
                         <lfr-editable id="id-rich-${index}" type="rich-text">
                             Price
                         </lfr-editable>

@@ -2,15 +2,15 @@
   box-shadow: 0px 0px 10px 5px rgba(200, 200, 200, 0.5);
   transition: transform 0.3s;
   cursor: pointer;
+}
 
-  .product-image {
-    height: 200px;
-    object-fit: contain;
-    background-color: rgba(237, 237, 237, 0.8);
-  }
+.product-image {
+  height: 200px;
+  max-width: 100%;
+  object-fit: contain;
+  background-color: rgba(237, 237, 237, 0.8);
 }
 
 .product-container:hover {
   transform: scale(1.1);
 }
-

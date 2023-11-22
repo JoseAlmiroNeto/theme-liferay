@@ -13,7 +13,7 @@
                                     ${cur_Fieldset35191984.Text49190910.getData()}
                                 </#if>
                             </h5>
-                            <p class="card-text text-end">
+                            <p class="card-text text-right">
                                 R$ <#if (cur_Fieldset35191984.Text46098353.getData())??>
 	                                ${cur_Fieldset35191984.Text46098353.getData()}
                                 </#if>
