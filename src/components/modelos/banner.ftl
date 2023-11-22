@@ -6,21 +6,25 @@
         <img class="banner-img d-md-none w-100" alt="${imgBannerMobile.getAttribute("alt")}" data-fileentryid="${imgBannerMobile.getAttribute("fileEntryId")}" src="${imgBannerMobile.getData()}" />
     </#if>
     <div class="banner-information w-100 d-flex flex-column align-items-center align-items-md-start position-absolute text-center text-md-left">
-        <p>SUMMER 2023</p>
-        <h1 class="banner-title font-weight-bold">
-            <#if (titulo.getData())??>
-                ${titulo.getData()}
-            </#if>
-        </h1>
-        <p class="banner-description">
-            <#if (descricao.getData())??>
-                ${descricao.getData()}
-            </#if>
-        </p>
-        <button class="banner-button border-0 font-weight-bold">
-            <#if (botao.getData())??>
-                ${botao.getData()}
-            </#if>
-        </button>
+        <#if (texttop.getData())??>
+            <p>
+                ${texttop.getData()}
+            </p>
+        </#if>
+        <#if (title.getData())??>
+            <h1 class="banner-title font-weight-bold">
+                ${title.getData()}
+            </h1>
+        </#if>
+        <#if (description.getData())??>
+            <p class="banner-description">
+                ${description.getData()}
+            </p>
+        </#if>
+        <#if (button.getData())??>
+            <button class="banner-button border-0 font-weight-bold">
+                ${button.getData()}
+            </button>
+        </#if>
     </div>
 </div>
