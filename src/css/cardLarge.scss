@@ -1,0 +1,25 @@
+* {
+  margin: 0px;
+}
+.card-container-large {
+  width: 240px;
+  box-shadow: none;
+}
+.card-img-large {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-info-large {
+  gap: 10px;
+  padding: 25px 0 25px 0;
+}
+
+.card-description-large {
+  font-size: 14px;
+}
+
+.card-price {
+  color: #2d9279;
+}
