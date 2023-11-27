@@ -1,0 +1,62 @@
+.slick-carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 2;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-track {
+    display: flex !important;
+}
+
+
+.carousel-container {
+  color: white;
+}
+
+.carousel-img {
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-information {
+  padding: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 1.3rem;
+  border-radius: 5px;
+}
+
+.carousel-button {
+  height: 62px;
+  width: 228px;
+  background-color: #2dc071;
+  font-size: 24px;
+  color: white;
+  border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  .carousel-information {
+    padding: 0 170px 0 170px;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    gap: 1rem;
+    border-radius: 5px;
+  }
+}
+

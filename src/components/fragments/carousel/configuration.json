@@ -1,0 +1,19 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"name": "numbersCarousel",
+					"label": "Numero de Items",
+					"description": "number-items",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "Placeholder"
+					},
+					"dataType": "int",
+					"defaultValue": "1"
+				}
+			]
+		}
+	]
+}

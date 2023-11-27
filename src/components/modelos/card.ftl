@@ -4,8 +4,8 @@
             <#list Fieldset35191984.getSiblings() as cur_Fieldset35191984>
                 <div class="col-md-4">
                     <div class="card product-container">
-                        <#if (cur_Fieldset35191984.Imagemcard.getData())?? && cur_Fieldset35191984.Imagemcard.getData() !="">
-                            <img class="product-image w-100" alt="${cur_Fieldset35191984.Imagemcard.getAttribute("alt")}" data-fileentryid="${cur_Fieldset35191984.Imagemcard.getAttribute("fileEntryId")}" src="${cur_Fieldset35191984.Imagemcard.getData()}" />
+                        <#if (cur_Fieldset35191984.imgcard.getData())?? && cur_Fieldset35191984.imgcard.getData() !="">
+                            <img class="product-image w-100" alt="${cur_Fieldset35191984.imgcard.getAttribute("alt")}" data-fileentryid="${cur_Fieldset35191984.Imagemcard.getAttribute("fileEntryId")}" src="${cur_Fieldset35191984.Imagemcard.getData()}" />
                         </#if>
                         <div class="card-body">
                             <#if (cur_Fieldset35191984.nomeproduto.getData())??>
