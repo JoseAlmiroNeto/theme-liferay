@@ -1,9 +1,3 @@
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
 <div class="slick-carousel">
    [#list 1..configuration.numbersCarousel as index]
    <div class="carousel-container h-100 w-100 position-relative">
@@ -33,3 +27,15 @@
    </div>
    [/#list]
 </div>
+
+<script>
+$(document).ready(function() {
+   $('.slick-carousel').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+   });
+});
+</script>
