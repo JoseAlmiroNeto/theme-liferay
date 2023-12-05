@@ -72,8 +72,9 @@
 </div>
 
 <@liferay_util["include"] page=body_bottom_include />
-
 <@liferay_util["include"] page=bottom_include />
+
+<@themeJs filename='slick.js' />
 
 </body>
 

@@ -1,13 +1,15 @@
+:root {
+  --clr-green: #2d9279;
+}
+
 * {
   margin: 0px;
 }
 .card-container-large {
   width: 240px;
-  box-shadow: none;
 }
 .card-img-large {
   height: 400px;
-  width: 100%;
   object-fit: cover;
 }
 
@@ -21,5 +23,5 @@
 }
 
 .card-price {
-  color: #2d9279;
+  color: var(--clr-green) ;
 }

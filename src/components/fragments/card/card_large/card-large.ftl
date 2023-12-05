@@ -2,7 +2,7 @@
     <div class="row">
         [#list 1..configuration.numbersCards as index]
         <div class="col-md-3 d-flex justify-content-center">
-            <div class="card card-container-large border-0">
+            <div class="card card-container-large border-0 shadow-none">
                 <lfr-editable id="id-img-${index}" type="image">
                     <img class="card-img-large w-100" src="" alt="img-card" />
                 </lfr-editable>

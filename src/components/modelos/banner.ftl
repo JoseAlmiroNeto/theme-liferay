@@ -1,4 +1,4 @@
-<div class="banner-container w-100 position-relative">
+<div class="banner-container w-100 h-100 position-relative">
     <#if (imgBannerWeb.getData())?? && imgBannerWeb.getData() !="">
         <img class="banner-img d-none d-md-block w-100" alt="${imgBannerWeb.getAttribute("alt")}" data-fileentryid="${imgBannerWeb.getAttribute("fileEntryId")}" src="${imgBannerWeb.getData()}" />
     </#if>
