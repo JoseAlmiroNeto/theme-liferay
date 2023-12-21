@@ -1,14 +1,14 @@
 <#assign AssetCategoryLocalService=serviceLocator.findService("com.liferay.asset.kernel.service.AssetCategoryLocalService") />
-<#assign site_url=htmlUtil.escape(layout.getGroup().getDisplayURL(themeDisplay, !layout.isPublicLayout())) />
+<#assign site_url = htmlUtil.escape(layout.getGroup().getDisplayURL(themeDisplay, !layout.isPublicLayout())) />
+
 <#if entries?has_content>
-    <div class="mt-4">
-        <div class="row">
-            <#list entries as curEntry>
+	<div class="slick-carousel">
+	   <#list entries as curEntry>	
                 <#assign assetRenderer=curEntry.getAssetRenderer() />
                 <#assign DDMFormFieldValuesMap=assetRenderer.getDDMFormValuesReader().getDDMFormValues().getDDMFormFieldValuesMap() />
                 <#assign DDMFormFieldsReferencesMap=assetRenderer.article.DDMStructure.DDMForm.getDDMFormFieldsReferencesMap(true) />
-                <div class="col-xl-4 col-md-6 d-flex align-items-center justify-content-center">
-                    <a href="${site_url}/w/${curEntry.getTitle(locale)?lower_case?replace(' ', '-')}" class="container-card-news border-0 text-decoration-none">
+                <div class="d-flex align-items-center justify-content-center">
+                   <a href="${site_url}/w/${curEntry.getTitle(locale)?lower_case?replace(' ', '-')}"  class="container-card-news border-0 text-decoration-none">
                         <div>
                             <#assign imgField=DDMFormFieldsReferencesMap['imagemNoticia'].name />
                             <#assign imgValue=DDMFormFieldValuesMap[imgField]
@@ -25,7 +25,7 @@
                                     ${author}
                                 </p>
                                 <p class="m-0">•</p>
-                                <p class="m-0">
+                               <p class="m-0">
                                     <#assign DateField=DDMFormFieldsReferencesMap['date'].name />
                                     <#assign date=DDMFormFieldValuesMap[DateField]
                                         [0].getValue().getString(locale) />
@@ -44,21 +44,25 @@
                                     [0].getValue().getString(locale) />
                                 ${content}
                             </p>
-                            <#assign categoryColors={ "Saúde" : "#ff3b30" , "Esporte" : "#34c759" , "Política" : "#007aff" , "Educação" : "#ffcc00" , "Tecnologia" : "#5ac8fa"
-                                } />
+                            <#assign categoryColors = {
+                              "Saúde": "#ff3b30",
+                              "Esporte": "#34c759",
+                              "Política": "#007aff",
+															"Educação": "#ffcc00",
+															"Tecnologia": "#5ac8fa"
+                            } />
                             <div class="tags d-flex mt-1">
-                                <#list AssetCategoryLocalService.getEntryCategories(curEntry.getEntryId()) as entryCat>
-                                    <#assign categoryName=entryCat.getName()?trim />
-                                    <#assign categoryColor=categoryColors[categoryName]!'' />
-                                    <p class="tag m-0" style="background-color: ${categoryColor}; color: white;">
-                                        ${entryCat.getName()}
-                                    </p>
-                                </#list>
-                            </div>
+                              <#list AssetCategoryLocalService.getEntryCategories(curEntry.getEntryId()) as entryCat>
+                                <#assign categoryName = entryCat.getName()?trim />
+                                <#assign categoryColor = categoryColors[categoryName]!'' />
+                                <p class="tag m-0" style="background-color: ${categoryColor}; color: white;">
+                                   ${entryCat.getName()}
+                                </p>
+                             </#list>
+                           </div>
                         </div>
                     </a>
                 </div>
-            </#list>
-        </div>
-    </div>
+	   </#list>
+	</div>
 </#if>

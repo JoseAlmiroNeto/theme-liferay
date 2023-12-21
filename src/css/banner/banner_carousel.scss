@@ -30,6 +30,21 @@
   display: block;
 }
 
+.carousel-title {
+  font-size: 58px; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 500px; 
+  line-height: 1.2;
+}
+
+.carousel-description {
+  font-size: 14px; 
+  display: inline-block; 
+  width: 304px; 
+  word-wrap: break-word;
+}
+
 .carousel-information {
   padding: 0 auto;
   top: 50%;

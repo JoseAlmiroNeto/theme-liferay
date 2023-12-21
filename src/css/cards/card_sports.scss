@@ -1,0 +1,43 @@
+.container-all {
+  gap: 40px;
+}
+.card-sports {
+  gap: 16px;
+  max-width: 770px;
+}
+.card-img-sports {
+  width: 346px;
+  height: 196px;
+  object-fit: cover;
+}
+.card-body-sports {
+  max-width: 400px;
+}
+.card-date-sports {
+  font-size: 14px;
+  font-weight: 700;
+  gap: 4px;
+  color: #000;
+}
+.card-title-sports {
+  font-size: 24px;
+  font-weight: 700;
+  color: #06aa48;
+}
+.card-description-sports {
+  color: #000;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+.card-tags-sports {
+  gap: 5px;
+
+  .tag {
+    background-color: var(--clr-blue);
+    border-radius: 100px;
+    gap: 5px;
+    color: #2be375;
+  }
+}

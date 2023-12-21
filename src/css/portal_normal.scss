@@ -1,0 +1,29 @@
+.header-menu-bar nav {
+    height: 100%;
+}
+
+.header-menu-bar nav ul {
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    padding-left: 34px;
+}
+
+.header-menu-bar nav ul li {
+    list-style-type: none;
+    color: black;
+}
+
+.header-menu-bar nav ul li a {
+    color: black;
+}
+
+.search-bar div section {
+    margin: 0px;
+}
+
+.view-menu {
+    position: absolute;
+    background-color: #f3f3;
+}

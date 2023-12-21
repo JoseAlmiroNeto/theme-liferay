@@ -4,11 +4,17 @@
 
 @import 'liferay-font-awesome/scss/font-awesome';
 @import 'liferay-font-awesome/scss/glyphicons';
-@import 'carousel_slick.scss';
-@import 'card_medium.scss';
-@import 'card_large.scss';
-@import 'card_news.scss';
-@import 'banner.scss';
+@import './cards//card_medium.scss';
+@import './cards//card_large.scss';
+@import './cards//card_news.scss';
+@import './cards//card_sports.scss';
+@import './cards//card_products.scss';
+@import './banner//banner_carousel.scss';
+@import './banner//banner_normal.scss';
+@import 'slick-theme.scss';
+@import 'slick.scss';
+@import 'portal_normal.scss';
+
 
 /* endinject */
 
